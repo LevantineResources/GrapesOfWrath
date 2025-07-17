@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+    }
+    .image-wrapper {
+      position: relative;
+      height: 100%;
+      max-height: 1536px;
+      margin: 0 auto;
+      aspect-ratio: 2/3;
+    }
+    .image-wrapper img {
+      height: 100%;
+      width: auto;
+      display: block;
+    }
+    .text-layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 2;
+    }
+    .caption {
+      position: absolute;
+      font-size: 4vw;
+      background: rgba(0, 0, 0, 0);
+      padding: 0.4em 0.6em;
+      border-radius: 0.5em;
+      color: transparent;
+      pointer-events: auto;
+      line-height: 1.4;
+      text-align: center;
+    }
+    .word {
+      position: relative;
+      cursor: pointer;
+      border-bottom: 1px dotted #666;
+    }
+    .word .tooltip {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      background: #222;
+      color: #fff;
+      padding: 0.3em 0.6em;
+      border-radius: 0.4em;
+      font-size: 0.8em;
+      white-space: nowrap;
+      right: 0;
+      transform: translateY(-0.4em);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      z-index: 5;
+    }
+    .word:hover .tooltip {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(-100%);
+    }
+    .word:hover {
+      background-color: rgba(255, 255, 0, 0.25);
+      color: None;
+    }
+    .tooltip-bottom {
+      top: 100% !important;
+      bottom: auto !important;
+      transform: translateY(0.4em) !important;
+    }
+    .c1 {top: 2%;right: 3%;width: 39%;}
+    .c2 {top: 21%;right: 49%;width: 39%;}
+    .c3 {top: 56%;right: 3%;width: 39%;}
+    .c4 {top: 32%;right: 59%;width: 26%;}
+    .c5 {top: 94%;right: 3%;width: 39%;}
+    .c6 {top: 94%;right: 53%;width: 38%;}
+
+
+  </style>
+</head>
+<body>
+  <div class="image-wrapper">
+    <img src="../images/14.png" alt="Page 14 Comic">
+    <div class="text-layer">
+      <div class="caption c1">
+  <span class="word">اللَّيْل<span class="tooltip tooltip-bottom">the night</span></span>
+  <span class="word">هَادِي<span class="tooltip tooltip-bottom">is calm</span></span>
+  <span class="word">...<span class="tooltip tooltip-bottom">...</span></span>
+  <span class="word">وَ<span class="tooltip tooltip-bottom">and</span></span>
+  <span class="word">الْكِلّ<span class="tooltip tooltip-bottom">everyone</span></span>
+  <span class="word">تَعْبَان<span class="tooltip tooltip-bottom">is tired</span></span>
+</div>
+
+<div class="caption c2">
+  <span class="word">أَنَا<span class="tooltip">I</span></span>
+  <span class="word">مَعِك<span class="tooltip">with you</span></span>
+  <span class="word">يَا<span class="tooltip">oh</span></span>
+  <span class="word">سِتِّي<span class="tooltip">grandma</span></span>
+  <span class="word">.<span class="tooltip">.</span></span>
+</div>
+
+<div class="caption c3">
+  <span class="word">الْجَدَّة<span class="tooltip">the grandmother</span></span>
+  <span class="word">رَاحِت<span class="tooltip">passed away</span></span>
+  <span class="word">بِهُدُوء<span class="tooltip">peacefully</span></span>
+</div>
+
+<div class="caption c4">
+  <span class="word">مَا<span class="tooltip">she didn’t</span></span>
+  <span class="word">قَالِت<span class="tooltip">say</span></span>
+  <span class="word">لَحَدَا<span class="tooltip">to anyone</span></span>
+  <span class="word">...<span class="tooltip">...</span></span>
+  <span class="word">مَشِيُوا<span class="tooltip">they kept on</span></span>
+</div>
+
+<div class="caption c5">
+  <span class="word">وَصَلْنَا<span class="tooltip">we arrived</span></span>
+  <span class="word">...<span class="tooltip">...</span></span>
+  <span class="word">هَيْ<span class="tooltip">this is</span></span>
+  <span class="word">كَالِيفُورْنْيَا<span class="tooltip">California</span></span>
+</div>
+
+<div class="caption c6">
+  <span class="word">وَصَلُوا<span class="tooltip">they arrived</span></span>
+  <span class="word">بَس<span class="tooltip">but</span></span>
+  <span class="word">التَّعَب<span class="tooltip">the exhaustion</span></span>
+  <span class="word">بَعْدُه<span class="tooltip">still</span></span>
+  <span class="word">مَكَمَّل<span class="tooltip">continues</span></span>
+</div>
+
+      
+      
+    </div>
+  </div>
+</body>
+</html>

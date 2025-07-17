@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+    }
+    .image-wrapper {
+      position: relative;
+      height: 100%;
+      max-height: 1536px;
+      margin: 0 auto;
+      aspect-ratio: 2/3;
+    }
+    .image-wrapper img {
+      height: 100%;
+      width: auto;
+      display: block;
+    }
+    .text-layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 2;
+    }
+    .caption {
+      color: transparent;    
+      background: none; 
+      position: absolute;
+      font-size: 4.2vw;
+      line-height: 1.2;
+      background: rgba(0, 0, 0, 0);
+      padding: 0.4em 0.6em;
+      border-radius: 0.5em;
+      pointer-events: auto;
+      text-align: center;
+    }
+    .word {
+      position: relative;
+      cursor: pointer;
+      border-bottom: 1px dotted #666;
+    }
+    .word .tooltip {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      background: #222;
+      color: #fff;
+      padding: 0.3em 0.6em;
+      border-radius: 0.4em;
+      font-size: 0.8em;
+      white-space: nowrap;
+      bottom: 0%;
+      right: 0;
+      transform: translateY(-0.4em);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      z-index: 5;
+    }
+    .word:hover .tooltip {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(-100%);
+    }
+    .word:hover {
+      background-color: rgba(255, 255, 0, 0.25);
+      color: None;
+    }
+    .c1 {top: 4%;right: 3%;width: 39%;}
+    .c2 {top: 6%;right: 80%;width: 14%;}
+    .c3 {top: 24%;right: 51%;width: 41%;}
+    .c4 {top: 56.6%;right: 2%;width: 42%;}
+    .c5 {top: 45.4%;right: 50%;width: 19%;}
+    .c6 {top: 89%;right: 4%;width: 39%;}
+    .c7 {top: 66%;right: 45%;width: 39%;}
+    .c8 {top: 85%;right: 65%;width: 27%;}
+
+
+
+  </style>
+</head>
+<body>
+  <div class="image-wrapper">
+    <img src="../images/4.png" alt="Page 4 Comic">
+    <div class="text-layer">
+      <div class="caption c1">
+  <span class="word">اِنْسَجَمَتِ<span class="tooltip">blended</span></span>
+  <span class="word">الرِّيح<span class="tooltip">the wind</span></span>
+  <span class="word">وَ<span class="tooltip">and</span></span>
+  <span class="word">الشَّمْس<span class="tooltip">the sun</span></span>
+  <span class="word">فِي<span class="tooltip">on</span></span>
+  <span class="word">طَرِيق<span class="tooltip">a road</span></span>
+  <span class="word">طَوِيل<span class="tooltip">long</span></span>
+  <span class="word">وَ<span class="tooltip">and</span></span>
+  <span class="word">مُغْبَرّ<span class="tooltip">dusty</span></span>
+  <span class="word">.<span class="tooltip">.</span></span>
+</div>
+
+<div class="caption c2">
+  <span class="word">لازِم<span class="tooltip">I must</span></span>
+  <span class="word">أَرْجَع<span class="tooltip">go back</span></span>
+  <span class="word">عَ<span class="tooltip">to</span></span>
+  <span class="word">بَيْتِنا<span class="tooltip">our house</span></span>
+</div>
+
+<div class="caption c3">
+  <span class="word">توم<span class="tooltip">Tom</span></span>
+  <span class="word">جُود<span class="tooltip">Joad</span></span>
+  <span class="word">طِلِع<span class="tooltip">got out</span></span>
+  <span class="word">مِنِ<span class="tooltip">from</span></span>
+  <span class="word">السِّجْن<span class="tooltip">prison</span></span>
+  <span class="word">بَعْد<span class="tooltip">after</span></span>
+  <span class="word">أَرْبَع<span class="tooltip">four</span></span>
+  <span class="word">سِنِين<span class="tooltip">years</span></span>
+  <span class="word">.<span class="tooltip">.</span></span>
+</div>
+
+<div class="caption c4">
+  <span class="word">الطَّرِيق<span class="tooltip">the road</span></span>
+  <span class="word">طَوِيل<span class="tooltip">is long</span></span>
+  <span class="word">وَ<span class="tooltip">and</span></span>
+  <span class="word">الرِّجِل<span class="tooltip">the leg</span></span>
+  <span class="word">تَعِبِت<span class="tooltip">got tired</span></span>
+  <span class="word">.<span class="tooltip">.</span></span>
+</div>
+
+<div class="caption c5">
+  <span class="word">كِلّ<span class="tooltip">everything</span></span>
+  <span class="word">شِي<span class="tooltip">thing</span></span>
+  <span class="word">فَاضِي<span class="tooltip">is empty</span></span>
+  <span class="word">...<span class="tooltip">...</span></span>
+  <span class="word">وَيْن<span class="tooltip">where</span></span>
+  <span class="word">رَاحُوا<span class="tooltip">did they go</span></span>
+  <span class="word">النَّاس<span class="tooltip">the people</span></span>
+  <span class="word">؟<span class="tooltip">?</span></span>
+</div>
+
+<div class="caption c6">
+  <span class="word">كِلّ<span class="tooltip">all</span></span>
+  <span class="word">الْبُيُوت<span class="tooltip">the houses</span></span>
+  <span class="word">فَاضْيِة<span class="tooltip">are empty</span></span>
+  <span class="word">وَ<span class="tooltip">and</span></span>
+  <span class="word">مَهْجُورَة<span class="tooltip">abandoned</span></span>
+</div>
+
+<div class="caption c7">
+  <span class="word">توم<span class="tooltip">Tom</span></span>
+  <span class="word">مَكَّمَل<span class="tooltip">continued</span></span>
+  <span class="word">طَرِيقُه<span class="tooltip">his road</span></span>
+  <span class="word">…<span class="tooltip">…</span></span>
+</div>
+
+<div class="caption c8">
+  <span class="word">لِسَّاتُه<span class="tooltip">he still</span></span>
+  <span class="word">مَا<span class="tooltip">not</span></span>
+  <span class="word">بْيِعْرِف<span class="tooltip">knows</span></span>
+  <span class="word">شُو<span class="tooltip">what</span></span>
+  <span class="word">فِي<span class="tooltip">is</span></span>
+  <span class="word">قُدَّام<span class="tooltip">ahead</span></span>
+</div>
+
+      
+      
+    </div>
+  </div>
+</body>
+</html>

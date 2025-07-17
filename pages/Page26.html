@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+    }
+    .image-wrapper {
+      position: relative;
+      height: 100%;
+      max-height: 1536px;
+      margin: 0 auto;
+      aspect-ratio: 2/3;
+    }
+    .image-wrapper img {
+      height: 100%;
+      width: auto;
+      display: block;
+    }
+    .text-layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 2;
+    }
+    .caption {
+      position: absolute;
+      font-size: 4.1vw;
+      background: rgba(0, 0, 0, 0);
+      padding: 0.4em 0.6em;
+      border-radius: 0.5em;
+      color: transparent;
+      pointer-events: auto;
+      line-height: 1.4;
+      text-align: center;
+    }
+    .word {
+      position: relative;
+      cursor: pointer;
+      border-bottom: 1px dotted #666;
+    }
+    .word .tooltip {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      background: #222;
+      color: #fff;
+      padding: 0.3em 0.6em;
+      border-radius: 0.4em;
+      font-size: 0.8em;
+      white-space: nowrap;
+      right: 0;
+      transform: translateY(-0.4em);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      z-index: 5;
+    }
+    .word:hover .tooltip {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(-100%);
+    }
+    .word:hover {
+      background-color: rgba(255, 255, 0, 0.25);
+      color: None;
+    }
+    .tooltip-bottom {
+      top: 250%;
+      bottom: auto;
+      transform: translateY(0.4em);
+    }
+    .c1 {top: 0%;right: 24%;width: 44%;font-size: 7.1vw;}
+    .c2 {top: 39%;right: 2%;width: 42%;}
+    .c3 {top: 39%;right: 52%;width: 39%;}
+    .c4 {top: 67.5%;right: -3%;width: 52%;font-size: 3.7vw;}
+    .c5 {top: 67%;right: 47%;width: 50%;font-size: 3.8vw;}
+    .c6 {top: 94%;right: -1%;width: 46%;}
+    .c7 {top: 94%;right: 48%;width: 46%;}
+
+
+  </style>
+</head>
+<body>
+  <div class="image-wrapper">
+    <img src="../images/26.png" alt="Page 26 Comic">
+    <div class="text-layer">
+      <div class="caption c1">
+  <span class="word">نحنا<span class="tooltip tooltip-bottom">we</span></span>
+  <span class="word">بعض<span class="tooltip tooltip-bottom">are each other</span></span>
+</div>
+
+<div class="caption c2">
+  <span class="word">الإِنسَان<span class="tooltip">a human</span></span>
+  <span class="word">مَا<span class="tooltip">cannot</span></span>
+  <span class="word">بْيِقْدَر<span class="tooltip">be able</span></span>
+  <span class="word">يِعِيش<span class="tooltip">to live</span></span>
+  <span class="word">وَحْدُه<span class="tooltip">alone</span></span>
+</div>
+
+<div class="caption c3">
+  <span class="word">فِينَا<span class="tooltip">we can</span></span>
+  <span class="word">نِقَسِّم<span class="tooltip">share</span></span>
+  <span class="word">الْقَلِيل<span class="tooltip">the little</span></span>
+  <span class="word">وَنِظَلّ<span class="tooltip">and remain</span></span>
+  <span class="word">بَشَر<span class="tooltip">human</span></span>
+</div>
+
+<div class="caption c4">
+  <span class="word">الحَلَقَة<span class="tooltip">the link</span></span>
+  <span class="word">وَحْدَهَا<span class="tooltip">alone</span></span>
+  <span class="word">ضَعِيفَة<span class="tooltip">is weak</span></span>
+  <span class="word">وَ<span class="tooltip">and</span></span>
+  <span class="word">السِّلسِلِة<span class="tooltip">the chain</span></span>
+  <span class="word">قَوِيِّة<span class="tooltip">is strong</span></span>
+</div>
+
+<div class="caption c5">
+  <span class="word">اللَّه<span class="tooltip">God</span></span>
+  <span class="word">عَطَانَا<span class="tooltip">gave us</span></span>
+  <span class="word">الرَّحْمِة<span class="tooltip">mercy</span></span>
+  <span class="word">تِلْك<span class="tooltip">that</span></span>
+  <span class="word">قُوَّتْنَا<span class="tooltip">is our strength</span></span>
+  <span class="word">الحَقِيقِيِّة<span class="tooltip">true</span></span>
+</div>
+
+<div class="caption c6">
+  <span class="word">نَحْنَا<span class="tooltip">we are</span></span>
+  <span class="word">قَوِيِّين<span class="tooltip">strong</span></span>
+  <span class="word">بَعْض<span class="tooltip">together</span></span>
+  <span class="word">وَضُعَف<span class="tooltip">and weak</span></span>
+  <span class="word">وَحْد<span class="tooltip">alone</span></span>
+</div>
+
+<div class="caption c7">
+  <span class="word">فِينَا<span class="tooltip">we can</span></span>
+  <span class="word">نِخْتَار...<span class="tooltip">choose...</span></span>
+  <span class="word">الرَّحْمِة<span class="tooltip">mercy</span></span>
+  <span class="word">وَلا<span class="tooltip">or</span></span>
+  <span class="word">الْوَحْدِة<span class="tooltip">isolation</span></span>
+</div>
+
+      
+      
+    </div>
+  </div>
+</body>
+</html>

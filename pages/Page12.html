@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+    }
+    .image-wrapper {
+      position: relative;
+      height: 100%;
+      max-height: 1536px;
+      margin: 0 auto;
+      aspect-ratio: 2/3;
+    }
+    .image-wrapper img {
+      height: 100%;
+      width: auto;
+      display: block;
+    }
+    .text-layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 2;
+    }
+    .caption {
+      position: absolute;
+      font-size: 4.1vw;
+      background: rgba(0, 0, 0, 0);
+      padding: 0.4em 0.6em;
+      border-radius: 0.5em;
+      color: transparent;
+      pointer-events: auto;
+      line-height: 1.4;
+      text-align: center;
+    }
+    .word {
+      position: relative;
+      cursor: pointer;
+      border-bottom: 1px dotted #666;
+    }
+    .word .tooltip {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      background: #222;
+      color: #fff;
+      padding: 0.3em 0.6em;
+      border-radius: 0.4em;
+      font-size: 0.8em;
+      white-space: nowrap;
+      right: 0;
+      transform: translateY(-0.4em);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      z-index: 5;
+    }
+    .word:hover .tooltip {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(-100%);
+    }
+    .word:hover {
+      background-color: rgba(255, 255, 0, 0.25);
+      color: None;
+    }
+    .tooltip-bottom {
+      
+      top: 250%;
+      bottom: auto;
+      transform: translateY(0.4em);
+    }
+
+    .c1 {top: 26%;right: 2%;width: 39%;}
+    .c2 {top: 1%;right: 51%;width: 39%;}
+    .c3 {top: 22%;right: 55%;width: 39%;}
+    .c4 {top: 37.5%;right: 0%;width: 39%;}
+    .c5 {top: 33.5%;right: 51%;width: 41%;}
+    .c6 {top: 67%;right: 3%;width: 44%;}
+    .c7 {top: 66.5%;right: 65%;width: 32%;}
+
+
+  </style>
+</head>
+<body>
+  <div class="image-wrapper">
+    <img src="../images/12.png" alt="Page 12 Comic">
+    <div class="text-layer">
+      <div class="caption c1">
+  <span class="word">لَقُوا<span class="tooltip">they found</span></span>
+  <span class="word">عَائِلِة<span class="tooltip">a family</span></span>
+  <span class="word">وَاقْفِة<span class="tooltip">standing</span></span>
+  <span class="word">عَ<span class="tooltip">on</span></span>
+  <span class="word">الطَّرِيق<span class="tooltip">the road</span></span>
+</div>
+
+<div class="caption c2">
+  <span class="word">نِحْنَا<span class="tooltip tooltip-bottom">we are</span></span>
+  <span class="word">عَائِلِة<span class="tooltip tooltip-bottom">the family</span></span>
+  <span class="word">الْوِيلْسُون<span class="tooltip tooltip-bottom">Wilson</span></span>
+</div>
+
+<div class="caption c3">
+  <span class="word">سَيَّارْتْنا<span class="tooltip">our car</span></span>
+  <span class="word">وَقَّفِت<span class="tooltip">stopped</span></span>
+  <span class="word">.<span class="tooltip">.</span></span>
+  <span class="word">وَ<span class="tooltip">and</span></span>
+  <span class="word">مَرْتِي<span class="tooltip">my wife</span></span>
+  <span class="word">سَيري<span class="tooltip">Sairy</span></span>
+  <span class="word">مَرِيضِة<span class="tooltip">is sick</span></span>
+</div>
+
+<div class="caption c4">
+  <span class="word">مِنْحَاوِل<span class="tooltip">we're trying</span></span>
+  <span class="word">نِصْلَح<span class="tooltip">to fix</span></span>
+  <span class="word">السَّيَّارَة<span class="tooltip">the car</span></span>
+</div>
+
+<div class="caption c5">
+  <span class="word">صَارُوا<span class="tooltip">they became</span></span>
+  <span class="word">أَصْحَاب<span class="tooltip">friends</span></span>
+  <span class="word">وَ<span class="tooltip">and</span></span>
+  <span class="word">كَمَّلُوا<span class="tooltip">continued</span></span>
+  <span class="word">سَوَاة<span class="tooltip">together</span></span>
+</div>
+
+<div class="caption c6">
+  <span class="word">اللَّه<span class="tooltip">may God</span></span>
+  <span class="word">يْقَوِّي<span class="tooltip">give strength to</span></span>
+  <span class="word">سَيْرِي<span class="tooltip">Sairy</span></span>
+  <span class="word">...<span class="tooltip">...</span></span>
+  <span class="word">ضَعِيفِة<span class="tooltip">she is weak</span></span>
+  <span class="word">كْتِير<span class="tooltip">a lot</span></span>
+</div>
+
+<div class="caption c7">
+  <span class="word">الصِّحَّة<span class="tooltip">health</span></span>
+  <span class="word">بْتِضْعَف<span class="tooltip">gets weaker</span></span>
+  <span class="word">...<span class="tooltip">...</span></span>
+  <span class="word">بَس<span class="tooltip">but</span></span>
+  <span class="word">الطَّرِيق<span class="tooltip">the road</span></span>
+  <span class="word">بْيِكَمِّل<span class="tooltip">goes on</span></span>
+</div>
+
+      
+      
+    </div>
+  </div>
+</body>
+</html>

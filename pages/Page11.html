@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+    }
+    .image-wrapper {
+      position: relative;
+      height: 100%;
+      max-height: 1536px;
+      margin: 0 auto;
+      aspect-ratio: 2/3;
+    }
+    .image-wrapper img {
+      height: 100%;
+      width: auto;
+      display: block;
+    }
+    .text-layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 2;
+    }
+    .caption {
+      position: absolute;
+      font-size: 4.1vw;
+      background: rgba(0, 0, 0, 0);
+      padding: 0.4em 0.6em;
+      border-radius: 0.5em;
+      color: transparent;
+      pointer-events: auto;
+      line-height: 1.4;
+      text-align: center;
+    }
+    .word {
+      position: relative;
+      cursor: pointer;
+      border-bottom: 1px dotted #666;
+    }
+    .word .tooltip {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      background: #222;
+      color: #fff;
+      padding: 0.3em 0.6em;
+      border-radius: 0.4em;
+      font-size: 0.8em;
+      white-space: nowrap;
+      right: 0;
+      transform: translateY(-0.4em);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      z-index: 5;
+    }
+    .word:hover .tooltip {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(-100%);
+    }
+    .word:hover {
+      background-color: rgba(255, 255, 0, 0.25);
+      color: None;
+    }
+    .tooltip-bottom {
+      top: 250%;
+      bottom: auto;
+      transform: translateY(0.4em);
+    }
+    .c1 {top: 2%;right: 1%;width: 44%;}
+    .c2 {top: 1.5%;right: 51%;width: 42%;}
+    .c3 {top: 37%;right: 6%;width: 39%;}
+    .c4 {top: 63.5%;right: 51%;width: 43%;}
+    .c5 {top: 72%;right: 33%;width: 11%;}
+    .c6 {top: 92%;right: 50%;width: 46%;}
+
+
+  </style>
+</head>
+<body>
+  <div class="image-wrapper">
+    <img src="../images/11.png" alt="Page 11 Comic">
+    <div class="text-layer">
+      <div class="caption c1">
+  <span class="word">كِلّ<span class="tooltip tooltip-bottom">all</span></span>
+  <span class="word">النَّاس<span class="tooltip tooltip-bottom">the people</span></span>
+  <span class="word">بِأوكْلَاهُومَا<span class="tooltip tooltip-bottom">in Oklahoma</span></span>
+  <span class="word">كَانُوا<span class="tooltip tooltip-bottom">were</span></span>
+  <span class="word">عَم يِتْرُكُوا<span class="tooltip tooltip-bottom">leaving</span></span>
+  <span class="word">أَرَاضِيهُنّ<span class="tooltip tooltip-bottom">their lands</span></span>
+  <span class="word">وَ<span class="tooltip tooltip-bottom">and</span></span>
+  <span class="word">بُيُوتْهُنّ<span class="tooltip tooltip-bottom">their houses</span></span>
+  <span class="word">وَرَاهُنّ<span class="tooltip tooltip-bottom">behind them</span></span>
+</div>
+
+<div class="caption c2">
+  <span class="word">عَائِلَات<span class="tooltip tooltip-bottom">families</span></span>
+  <span class="word">تَعْبَانِين<span class="tooltip tooltip-bottom">tired</span></span>
+  <span class="word">و<span class="tooltip tooltip-bottom">and</span></span>
+  <span class="word">بِدُّهُن<span class="tooltip tooltip-bottom">they want</span></span>
+  <span class="word">يِوْصَلُوا<span class="tooltip tooltip-bottom">to get to</span></span>
+  <span class="word">عَلى<span class="tooltip tooltip-bottom">to</span></span>
+  <span class="word">كَالِيفورْنْيا<span class="tooltip tooltip-bottom">California</span></span>
+</div>
+
+<div class="caption c3">
+  <span class="word">مِثْلْنَا<span class="tooltip">like us</span></span>
+  <span class="word">نَفْس<span class="tooltip">same</span></span>
+  <span class="word">التَّعَب<span class="tooltip">tiredness</span></span>
+</div>
+
+<div class="caption c4">
+  <span class="word">كِلّ وَاحِد<span class="tooltip">everyone</span></span>
+  <span class="word">بِيْدَوِّر<span class="tooltip">is looking</span></span>
+  <span class="word">عَ<span class="tooltip">for</span></span>
+  <span class="word">أمَان<span class="tooltip">safety</span></span>
+  <span class="word">وَ<span class="tooltip">and</span></span>
+  <span class="word">شُغُل<span class="tooltip">work</span></span>
+</div>
+
+<div class="caption c5">
+  <span class="word">شَو<span class="tooltip">what</span></span>
+  <span class="word">هَاد<span class="tooltip">is this</span></span>
+  <span class="word">الدُّنْيَا<span class="tooltip">world</span></span>
+</div>
+
+<div class="caption c6">
+  <span class="word">وَ<span class="tooltip">and</span></span>
+  <span class="word">بِهَالرِّحْلَة<span class="tooltip">in this journey</span></span>
+  <span class="word">رَح<span class="tooltip">they will</span></span>
+  <span class="word">يِلْقُوا<span class="tooltip">find</span></span>
+  <span class="word">التَّضَامُن<span class="tooltip">solidarity</span></span>
+  <span class="word">.<span class="tooltip">.</span></span>
+</div>
+
+      
+      
+    </div>
+  </div>
+</body>
+</html>

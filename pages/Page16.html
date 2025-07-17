@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+    }
+    .image-wrapper {
+      position: relative;
+      height: 100%;
+      max-height: 1536px;
+      margin: 0 auto;
+      aspect-ratio: 2/3;
+    }
+    .image-wrapper img {
+      height: 100%;
+      width: auto;
+      display: block;
+    }
+    .text-layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 2;
+    }
+    .caption {
+      position: absolute;
+      font-size: 4.1vw;
+      background: rgba(0, 0, 0, 0);
+      padding: 0.4em 0.6em;
+      border-radius: 0.5em;
+      color: transparent;
+      pointer-events: auto;
+      line-height: 1.4;
+      text-align: center;
+    }
+    .word {
+      position: relative;
+      cursor: pointer;
+      border-bottom: 1px dotted #666;
+    }
+    .word .tooltip {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      background: #222;
+      color: #fff;
+      padding: 0.3em 0.6em;
+      border-radius: 0.4em;
+      font-size: 0.8em;
+      white-space: nowrap;
+      right: 0;
+      transform: translateY(-0.4em);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      z-index: 5;
+    }
+    .word:hover .tooltip {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(-100%);
+    }
+    .word:hover {
+      background-color: rgba(255, 255, 0, 0.25);
+      color: None;
+    }
+    .tooltip-bottom {
+      top: 250%;
+      bottom: auto;
+      transform: translateY(0.4em);
+    }
+    .c1 {top: 0%;right: -4%;width: 96%;font-size: 10.1vw;}
+    .c2 {top: 39.5%;right: 3%;width: 42%;}
+    .c3 {top: 39.5%;right: 47.5%;width: 48%;}
+    .c4 {top: 66.5%;right: 2%;width: 43%;}
+    .c5 {top: 67%;right: 50%;width: 42%;}
+    .c6 {top: 94%;right: -2%;width: 51%;}
+    .c7 {top: 94%;right: 48%;width: 46%;}
+
+
+  </style>
+</head>
+<body>
+  <div class="image-wrapper">
+    <img src="../images/16.png" alt="Page 16 Comic">
+    <div class="text-layer">
+      <div class="caption c1">
+  <span class="word">حلم<span class="tooltip tooltip-bottom">the dream of</span></span>
+  <span class="word">كاليفورنيا<span class="tooltip tooltip-bottom">California</span></span>
+  <span class="word">الكاذب<span class="tooltip tooltip-bottom">false</span></span>
+</div>
+
+<div class="caption c2">
+  <span class="word">الوَرَق<span class="tooltip">the poster</span></span>
+  <span class="word">وَعَد<span class="tooltip">promised</span></span>
+  <span class="word">بِالْفَاكْهَة<span class="tooltip">fruit</span></span>
+  <span class="word">وَالْخَيْر.<span class="tooltip">and abundance.</span></span>
+</div>
+
+<div class="caption c3">
+  <span class="word">بس<span class="tooltip">but</span></span>
+  <span class="word">فيها<span class="tooltip">in it</span></span>
+  <span class="word">الأوْجُه<span class="tooltip">the faces</span></span>
+  <span class="word">تَعْبَانِة<span class="tooltip">are tired</span></span>
+  <span class="word">وَالْجُوع<span class="tooltip">and hunger</span></span>
+  <span class="word">كِبِر.<span class="tooltip">has grown.</span></span>
+</div>
+
+<div class="caption c4">
+  <span class="word">الأيْدِي<span class="tooltip">the hands</span></span>
+  <span class="word">تْقَطِّف<span class="tooltip">pick</span></span>
+  <span class="word">وَالْجُيُوب<span class="tooltip">and the pockets</span></span>
+  <span class="word">فَاضْيِة<span class="tooltip">are empty</span></span>
+</div>
+
+<div class="caption c5">
+  <span class="word">كان في<span class="tooltip">there were</span></span>
+  <span class="word">ألَاف<span class="tooltip">thousands</span></span>
+  <span class="word">عَلَى<span class="tooltip">for</span></span>
+  <span class="word">شُغُل<span class="tooltip">a job</span></span>
+  <span class="word">وَاحِد.<span class="tooltip">one.</span></span>
+</div>
+
+<div class="caption c6">
+  <span class="word">الأرْض<span class="tooltip">the land</span></span>
+  <span class="word">خَصْبِة<span class="tooltip">is fertile</span></span>
+  <span class="word">بَس<span class="tooltip">but</span></span>
+  <span class="word">الْبَطُون<span class="tooltip">the bellies</span></span>
+  <span class="word">فَاضْيِة.<span class="tooltip">are empty.</span></span>
+</div>
+
+<div class="caption c7">
+  <span class="word">كَانَت<span class="tooltip">it was</span></span>
+  <span class="word">كِذْبِة...<span class="tooltip">a lie...</span></span>
+  <span class="word">وَالألَم<span class="tooltip">and the pain</span></span>
+  <span class="word">بَقِي<span class="tooltip">remained</span></span>
+</div>
+
+      
+      
+    </div>
+  </div>
+</body>
+</html>

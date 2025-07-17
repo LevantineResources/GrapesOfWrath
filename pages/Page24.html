@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+    }
+    .image-wrapper {
+      position: relative;
+      height: 100%;
+      max-height: 1536px;
+      margin: 0 auto;
+      aspect-ratio: 2/3;
+    }
+    .image-wrapper img {
+      height: 100%;
+      width: auto;
+      display: block;
+    }
+    .text-layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 2;
+    }
+    .caption {
+      position: absolute;
+      font-size: 4.1vw;
+      background: rgba(0, 0, 0, 0);
+      padding: 0.4em 0.6em;
+      border-radius: 0.5em;
+      color: transparent;
+      pointer-events: auto;
+      line-height: 1.4;
+      text-align: center;
+    }
+    .word {
+      position: relative;
+      cursor: pointer;
+      border-bottom: 1px dotted #666;
+    }
+    .word .tooltip {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      background: #222;
+      color: #fff;
+      padding: 0.3em 0.6em;
+      border-radius: 0.4em;
+      font-size: 0.8em;
+      white-space: nowrap;
+      right: -50%;
+      transform: translateY(-0.4em);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      z-index: 5;
+    }
+    .word:hover .tooltip {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(-100%);
+    }
+    .word:hover {
+      background-color: rgba(255, 255, 0, 0.25);
+      color: None;
+    }
+    .tooltip-bottom {
+      top: 250%;
+      bottom: auto;
+      transform: translateY(0.4em);
+    }
+    .c1 {top: 25%;right: 0%;width: 44%;}
+    .c2 {top: 1.5%;right: 53%;width: 42%;}
+    .c3 {top: 25%;right: 52%;width: 39%;}
+    .c4 {top: 53%;right: 1%;width: 43%;}
+    .c5 {top: 50%;right: 54%;width: 36%;line-height: 1.2;}
+    .c6 {top: 91.5%;right: -1%;width: 46%;}
+    .c7 {top: 91%;right: 48%;width: 46%;}
+
+  </style>
+</head>
+<body>
+  <div class="image-wrapper">
+    <img src="../images/24.png" alt="Page 24 Comic">
+    <div class="text-layer">
+      <div class="caption c1">
+  <span class="word">تَوم<span class="tooltip">Tom</span></span>
+  <span class="word">هَرَب...<span class="tooltip">escaped...</span></span>
+  <span class="word">وَرَكِض<span class="tooltip">and ran</span></span>
+  <span class="word">عَلَى<span class="tooltip">to</span></span>
+  <span class="word">بَيْتهن<span class="tooltip">their house</span></span>
+</div>
+
+<div class="caption c2">
+  <span class="word">قَتَلوا<span class="tooltip tooltip-bottom">they killed</span></span>
+  <span class="word">جيم<span class="tooltip tooltip-bottom">Jim</span></span>
+  <span class="word">لأنّو<span class="tooltip tooltip-bottom">because</span></span>
+  <span class="word">كان عَم<span class="tooltip tooltip-bottom">he was</span></span>
+  <span class="word">يِفَكِّر<span class="tooltip tooltip-bottom">thinking</span></span>
+  <span class="word">بِالتَّنظيم...<span class="tooltip tooltip-bottom">about organizing...</span></span>
+  <span class="word">فَأَنا<span class="tooltip tooltip-bottom">so I</span></span>
+  <span class="word">أخَدت<span class="tooltip tooltip-bottom">took</span></span>
+  <span class="word">بِتارُه<span class="tooltip tooltip-bottom">revenge for him</span></span>
+</div>
+
+<div class="caption c3">
+  <span class="word">إِذَا<span class="tooltip">if</span></span>
+  <span class="word">مْسِكُونِي<span class="tooltip">they catch me</span></span>
+  <span class="word">بِيْعِدْمُونِي<span class="tooltip">they’ll execute me</span></span>
+</div>
+
+<div class="caption c4">
+  <span class="word">صَمْت<span class="tooltip">silence</span></span>
+  <span class="word">وَخَوْف...<span class="tooltip">and fear...</span></span>
+  <span class="word">وَقَرَار<span class="tooltip">and a decision</span></span>
+  <span class="word">سَرِيع<span class="tooltip">fast</span></span>
+</div>
+
+<div class="caption c5">
+  <span class="word">مِنْهَرُب...<span class="tooltip">we flee...</span></span>
+  <span class="word">مِنِتْخَبَّى...<span class="tooltip">we hide...</span></span>
+  <span class="word">بْنِرُوح<span class="tooltip">we go</span></span>
+  <span class="word">عَلَى<span class="tooltip">to</span></span>
+  <span class="word">مَخْزَن<span class="tooltip">the farm</span></span>
+  <span class="word">الْقُطْن<span class="tooltip">of cotton</span></span>
+</div>
+
+<div class="caption c6">
+  <span class="word">مَا فِيه<span class="tooltip">there's no</span></span>
+  <span class="word">وَقِت...<span class="tooltip">time...</span></span>
+  <span class="word">الضَّرُورِي<span class="tooltip">we must</span></span>
+  <span class="word">يِمْشُوا<span class="tooltip">move</span></span>
+</div>
+
+<div class="caption c7">
+  <span class="word">بِدَايِة<span class="tooltip">the beginning of</span></span>
+  <span class="word">هَرَب...<span class="tooltip">escape...</span></span>
+  <span class="word">وَمَصِير<span class="tooltip">and a fate</span></span>
+  <span class="word">مَجْهُول<span class="tooltip">unknown</span></span>
+</div>
+
+      
+      
+    </div>
+  </div>
+</body>
+</html>

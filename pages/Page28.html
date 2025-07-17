@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+    }
+    .image-wrapper {
+      position: relative;
+      height: 100%;
+      max-height: 1536px;
+      margin: 0 auto;
+      aspect-ratio: 2/3;
+    }
+    .image-wrapper img {
+      height: 100%;
+      width: auto;
+      display: block;
+    }
+    .text-layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 2;
+    }
+    .caption {
+      position: absolute;
+      font-size: 4.1vw;
+      background: rgba(0, 0, 0, 0);
+      padding: 0.4em 0.6em;
+      border-radius: 0.5em;
+      color: transparent;
+      pointer-events: auto;
+      line-height: 1.4;
+      text-align: center;
+    }
+    .word {
+      position: relative;
+      cursor: pointer;
+      border-bottom: 1px dotted #666;
+    }
+    .word .tooltip {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      background: #222;
+      color: #fff;
+      padding: 0.3em 0.6em;
+      border-radius: 0.4em;
+      font-size: 0.8em;
+      white-space: nowrap;
+      right: 0;
+      transform: translateY(-0.4em);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      z-index: 5;
+    }
+    .word:hover .tooltip {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(-100%);
+    }
+    .word:hover {
+      background-color: rgba(255, 255, 0, 0.25);
+      color: None;
+    }
+    .tooltip-bottom {
+      top: 250%;
+      bottom: auto;
+      transform: translateY(0.4em);
+    }
+    .c1 {top: 4%;right: 0%;width: 44%;}
+    .c2 {top: 23.5%;right: 1%;width: 31%;}
+    .c3 {top: 25.5%;right: 51%;width: 39%;}
+    .c4 {top: 34.5%;right: 1%;width: 43%;font-size: 4.5vw;}
+    .c5 {top: 53%;right: 59%;width: 24%;}
+    .c6 {top: 85%;right: 10%;width: 26%;}
+    .c7 {top: 63.5%;right: 49%;width: 46%;}
+    .c8 {top: 90%;right: 48%;width: 46%;}
+
+
+  </style>
+</head>
+<body>
+  <div class="image-wrapper">
+    <img src="../images/28.png" alt="Page 28 Comic">
+    <div class="text-layer">
+      <div class="caption c1">
+  <span class="word">رُوتِي<span class="tooltip">Ruthie</span></span>
+  <span class="word">حَكَت...<span class="tooltip">spoke...</span></span>
+  <span class="word">لازِم<span class="tooltip">you must</span></span>
+  <span class="word">تِهْرُب<span class="tooltip">run away</span></span>
+</div>
+
+<div class="caption c2">
+  <span class="word">الأمّ<span class="tooltip">the mother</span></span>
+  <span class="word">عِرْفِت<span class="tooltip">found out</span></span>
+  <span class="word">إنّو<span class="tooltip">that</span></span>
+  <span class="word">البِنْت<span class="tooltip">the girl</span></span>
+  <span class="word">كان عَم يِفشي<span class="tooltip">was revealing</span></span>
+  <span class="word">أَسرار<span class="tooltip">secrets</span></span>
+</div>
+
+<div class="caption c3">
+  <span class="word">بِرُوح...<span class="tooltip">I’ll go...</span></span>
+  <span class="word">مَا<span class="tooltip">I don’t</span></span>
+  <span class="word">عِنْدِي<span class="tooltip">have</span></span>
+  <span class="word">طَرِيق<span class="tooltip">way</span></span>
+  <span class="word">تَانِي<span class="tooltip">another</span></span>
+</div>
+
+<div class="caption c4">
+  <span class="word">العَيْلِة<span class="tooltip">the family</span></span>
+  <span class="word">وَدَّعَتُه...<span class="tooltip">said goodbye to him...</span></span>
+  <span class="word">القَلْب<span class="tooltip">the heart</span></span>
+  <span class="word">تَقِيل<span class="tooltip">is heavy</span></span>
+</div>
+
+<div class="caption c5">
+  <span class="word">اللَّه<span class="tooltip">God</span></span>
+  <span class="word">يِرْعَاك<span class="tooltip">protect you</span></span>
+  <span class="word">يَا<span class="tooltip">oh</span></span>
+  <span class="word">بْنِي<span class="tooltip">my son</span></span>
+</div>
+
+<div class="caption c6">
+  <span class="word">تَوم<span class="tooltip">Tom</span></span>
+  <span class="word">سَار...<span class="tooltip">walked...</span></span>
+  <span class="word">وَمَا<span class="tooltip">and no</span></span>
+  <span class="word">حَدَا<span class="tooltip">one</span></span>
+  <span class="word">عَارِف<span class="tooltip">knows</span></span>
+  <span class="word">إِمْتَى<span class="tooltip">when</span></span>
+  <span class="word">بِرْجَع<span class="tooltip">he will return</span></span>
+</div>
+
+<div class="caption c7">
+  <span class="word">رِجْلُه<span class="tooltip">his foot</span></span>
+  <span class="word">عَلَى<span class="tooltip">on</span></span>
+  <span class="word">طَرِيق<span class="tooltip">a road</span></span>
+  <span class="word">جْدِيد…<span class="tooltip">new…</span></span>
+</div>
+
+<div class="caption c8">
+  <span class="word">والعيلِة<span class="tooltip">and the family</span></span>
+  <span class="word">عَم تِصغَر<span class="tooltip">is shrinking</span></span>
+  <span class="word">شوي شوي<span class="tooltip">little by little</span></span>
+</div>
+
+      
+      
+    </div>
+  </div>
+</body>
+</html>
